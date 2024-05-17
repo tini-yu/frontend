@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'mixins';
+
+.card {
+    margin: 25px 150px 0 150px;
+    background-image: url('/assets/images/promos/SnowCleanersPromo.png');
+    background-position: center;
+    height: 500px;
+    width: 1140px;
+    &Image {
+        position: relative;
+        width: 1140px;
+        height: 500px;
+    }
+
+    &Text {
+        padding: 77px 717px 77px 98px;
+        display: block;
+
+        &Title {
+            @include h1-title
+        }
+        &Description {
+            margin: 20px 0 0 0;
+            @include h4-title;
+            width: 90%;
+        }
+        &Buttons {
+            margin: 51px 0 0 0;
+            display: flex;
+            gap: 20px;
+            &Arrows {
+                display: flex;
+                gap: 10px;
+                &Button {
+                    background-color: $blue;
+                    border-radius: 3px;
+                    padding: 15px;
+                    &Image {
+                        position: relative;
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+            &Info {
+                color: $white;
+                background-color: $blue;
+                padding: 18px 50px 18px 50px;
+                border-radius: 3px;
+            }
+        }
+    }
+}
