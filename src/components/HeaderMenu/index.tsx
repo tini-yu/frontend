@@ -8,32 +8,34 @@ import styles from './HeaderMenu.module.scss';
 export default function HeaderMenu() {
     return (
         <header>
-            <div className={styles.wrapper}>
-                <div className={styles.navList}>
-                    <Link href="/" className={styles.navListInfo}>
-                        Доставка и оплата
-                    </Link>
-                    <Link href="/" className={styles.navListInfo}>
-                        Контакты
-                    </Link>
-                </div>
-                <div className={styles.middle}>
-                    <div className={styles.middleplacegray}>Построй и обустрой</div>
-                    <div className={styles.logo}>
-                        <Image fill src="/assets/icons/dots.svg" alt="logo" />
+            <div className={styles.back}>
+                <div className={styles.wrapper}>
+                    <div className={styles.navList}>
+                        <Link href='/' className={styles.navListInfo}>
+                            Доставка и оплата
+                        </Link>
+                        <Link href='/' className={styles.navListInfo}>
+                            Контакты
+                        </Link>
                     </div>
-                    <div className={styles.middleplaceblack}>Всё для дома, дачи и стройки!</div>
-                </div>
-                <div className={styles.icons}>
-                    <Link href="/" className={styles.iconpic}>
-                        <Image fill src="/assets/icons/bar-chart.svg" alt="logo" />
-                    </Link>
-                    <Link href="/" className={styles.iconpic}>
-                        <Image fill src="/assets/icons/heart-line.svg" alt="logo" />
-                    </Link>
-                    <Link href="/" className={styles.iconpic}>
-                        <Image fill src="/assets/icons/shopping-cart.svg" alt="logo" />
-                    </Link>
+                    <div className={styles.middle}>
+                        <div className={styles.middleplacegray}>Построй и обустрой</div>
+                        <div className={styles.logo}>
+                            <Image fill src="/assets/icons/dots.svg" alt="logo" />
+                        </div>
+                        <div className={styles.middleplaceblack}>Всё для дома, дачи и стройки!</div>
+                    </div>
+                    <div className={styles.icon}>
+                        <Link href="/" className={styles.iconpic}>
+                            <Image fill src="/assets/icons/bar-chart.svg" alt="compare" />
+                        </Link>
+                        <Link href="/" className={styles.iconpic}>
+                            <Image fill src="/assets/icons/heart-line.svg" alt="favorite" />
+                        </Link>
+                        <Link href="/" className={styles.iconpic}>
+                            <Image fill src="/assets/icons/shopping-cart.svg" alt="cart" />
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className={styles.midwrap}>

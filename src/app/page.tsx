@@ -1,16 +1,25 @@
-import Link from "next/link";
-import Catalog from "@/components/Catalog";
-
 import Footer from "@/components/Footer";
-import CatalogCard from "@/components/CatalogCard";
 import HeaderMenu from "@/components/HeaderMenu";
-import Promo from "@/components/Promo";
+import Carousel from "@/components/Carousel";
+import MiniPromo from "@/components/MiniPromo";
+import Advantages from "@/components/Advantages";
+import TopCategory from "@/components/TopCategory";
+import NewCategory from "@/components/NewCategory";
+import SaleCategory from "@/components/SaleCategory";
+
+
 
 export default function Home() {
   return (
     <div>
       <HeaderMenu />
-      <Promo />
+      <Carousel />
+      <TopCategory />
+      <NewCategory />
+      <MiniPromo />
+      <SaleCategory />
+      <Advantages />
+      <Footer />
     </div>
   );
 }
