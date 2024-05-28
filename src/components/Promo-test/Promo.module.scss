@@ -6,12 +6,7 @@
     background-image: url('/assets/images/promos/SnowCleanersPromo.png');
     background-position: center;
     height: 500px;
-    width: 1140px;
-    &Image {
-        position: relative;
-        width: 1140px;
-        height: 500px;
-    }
+    background-repeat: no-repeat;
 
     &Text {
         padding: 77px 717px 77px 98px;
@@ -36,6 +31,11 @@
                     background-color: $blue;
                     border-radius: 3px;
                     padding: 15px;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        box-shadow: $box-shadow-hover;
+                    }
                     &Image {
                         position: relative;
                         width: 25px;
@@ -48,6 +48,11 @@
                 background-color: $blue;
                 padding: 18px 50px 18px 50px;
                 border-radius: 3px;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    box-shadow: $box-shadow-hover;
+                }
             }
         }
     }

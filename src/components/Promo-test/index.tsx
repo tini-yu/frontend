@@ -16,20 +16,20 @@ export default function Promo() {
                     Большой выбор снегоуборочных машин. Качественные устройства для любого бюджета
                     </div>
                     <div className={styles.cardTextButtons}>
-                        <div className={styles.cardTextButtonsInfo}>
+                        <button className={styles.cardTextButtonsInfo} type='submit'>
                             Подробнее
-                        </div>
+                        </button>
                         <div className={styles.cardTextButtonsArrows}>
-                            <div className={styles.cardTextButtonsArrowsButton}>
+                            <button className={styles.cardTextButtonsArrowsButton} type='submit'>
                                 <div className={styles.cardTextButtonsArrowsButtonImage}>
                                     <Image fill src="/assets/icons/arrow-left.svg" alt="arrow" />
                                 </div>
-                            </div>
-                            <div className={styles.cardTextButtonsArrowsButton}>
+                            </button>
+                            <button className={styles.cardTextButtonsArrowsButton} type='submit'>
                                 <div className={styles.cardTextButtonsArrowsButtonImage}>
                                     <Image fill src="/assets/icons/arrow-right.svg" alt="arrow" />
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>

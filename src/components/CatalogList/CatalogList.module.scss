@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'mixins';
+
+.wrapper {
+    display: flex;
+    width: 1140px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+.catalog {
+    display: grid;
+    gap: 70px;
+    &Top {
+        display: flex;
+        justify-content: space-between;
+
+        &Title {
+            @include h2-title;
+            text-align: left;
+        }
+
+        &Arrows {
+            display: flex;
+            gap: 10px;
+            &Button {
+                background-color: $blue;
+                border-radius: 3px;
+                padding: 9px;
+                //max-height: 43px;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    box-shadow: $box-shadow-hover;
+                }
+                &Image {
+                    position: relative;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+
+    &Bottom {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
